@@ -1,0 +1,67 @@
+h1{
+    padding: 60px;
+    text-align: center;
+    background: rgb(32, 32, 117);
+    font-size: 50px;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h3{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 50px;
+}
+.primary{
+    margin: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+
+}
+.primary1{
+    margin: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: black;
+    font-weight: 505;
+
+}
+.batman{
+    background-image: url("batman.jpg");
+    height: 400px;
+    /* background-image: url("superman1.jpg"); */
+    
+}
+.superman{
+    
+     background-image: url("superman1.jpg");
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.wonderwomen{
+    
+    background-image: url("wonderwoman.jpg");
+   height: 400px;
+   background-repeat: no-repeat;
+   background-size: cover;
+   
+}
+footer {
+    text-align: right;
+    padding: 50px;
+    background-color: rgb(32, 32, 117);
+    color: white;
+    min-height: 100px;
+    display: flex;
+    align-items: start;
+  }
+  .connect{
+    padding-left: 85%;
+    padding-top: 2px;
+  }
+  .logo{
+    width: 120px;
+  }

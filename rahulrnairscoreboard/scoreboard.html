@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scoreboard</title>
+    <link rel="stylesheet" type="text/css" href="scoreboard.css">
+    <script src="scoreboard.js"></script>
+
+</head>
+
+<body>
+    <h2>SCOREBOARD</h2>
+    <div id="container">
+       
+        <div class="team" id="teamA">
+            <div id="name1">team1</div>
+            <div class="score">0</div>
+            <button onclick="increaseScore('teamA')">add Score</button>
+        </div>
+        <div class="team" id="teamB">
+            <div id="name2">team2</div>
+            <div class="score">0</div>
+            <button onclick="increaseScore('teamB')">add Score</button>
+        </div>
+    </div>
+    <div id="timer">10</div>
+    <button id="startButton" onclick="startTimer()">Start Timer</button>
+    <button onclick="resetGame()">Reset Game</button>
+    <div id="winner" style="display: none;"></div>
+</html>

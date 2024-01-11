@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="basketball.css">
+</head>
+<body>
+    <div class="scoreboard">
+        <div class="team" id="team1">
+            <div id="teamName1">             
+            </div>
+            <p>0</p>
+            <button onclick="incrementScore('team1')">+</button>
+        </div>
+        <div class="team" id="team2">
+            <div  id="teamName2" >
+             </div>
+            <p>0</p>
+            <button onclick="incrementScore('team2')">+</button>
+        </div>
+    </div>
+    <div class="timer" id="timer">15
+    </div>
+  
+    <button onclick="startTimer()">Start</button>
+    <button onclick="resetScoreboard()">Reset</button>
+</div>
+    <div class="winner" id="winner"></div>
+    <script src="basketball.js"></script>
+</body>
+</html>

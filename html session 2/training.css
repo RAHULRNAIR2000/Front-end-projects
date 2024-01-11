@@ -1,0 +1,63 @@
+.intro1{ 
+    color: rgb(104, 253, 5);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 100px;
+    font-weight: bolder;
+    padding-left: 50px;
+}
+.intro2{ 
+    color: rgb(255, 231, 14);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-size: 100px;
+    font-weight: bolder;
+    padding-left: 50px;
+}
+.ex1{
+    border-radius: 50px;
+    border-color: aqua;
+    border-style: solid;
+    background-color: black;
+    border-width: 50px;
+    margin-top: 50px;
+    padding-right: 50px;
+    position: sticky;
+    top: 0;
+}
+.ex2{
+    background-color: blue;
+    padding-left: 30px;
+
+    border-width: 50px;
+
+    height: 300px;
+    
+    font-size: 100px;
+    border-radius: 50px;
+    
+}
+.ex3{
+    background-color: rgb(69, 249, 255);
+
+    border-width: 50px;
+    border-radius: 50px;
+
+    height: 300px;
+    
+    font-size: 100px;
+   
+    float:
+}
+.float1{
+    float: right;
+}
+   
+.float2{
+    clear: left;
+}
+   
+
+/* *{
+    background-color: rgb(90, 135, 219);
+} */

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="trial.css">
+    <script src="trial.js"></script>
+
+</head>
+<body>
+  <div id="firstPage">
+    <button id="transitionButton" onclick="transitionToSecondPage()">Click to enter</button>
+  </div>
+
+  <div id="secondPage">
+    
+    <div id="nameInputContainer">
+        <label for="nameInput"><h2>Choose your avatar</h2></label>
+        <input type="text" id="nameInput" placeholder="Your name">
+        <button id="transitionButton" onclick="submitName()">Submit</button>
+      </div>
+  </div>
+
+  <div id="thirdPage">
+    <h1>Greetings</h1>
+    <div id="greetingMessage"></div>
+    <div>
+        <h2>WHERE DO YOU WANT TO GO ?</h2>
+       
+        <div class="image-container">
+        
+            <p class="text1">earth 84</p>
+            <p class="text1">mars 3024</p>
+            <p class="text1">outer belt 2088</p>
+          
+            <img src="image1.jpg" onclick="showFullScreenImage1()" alt="Image 1">
+            <img src="image2.jpg" onclick="showFullScreenImage2()" alt="Image 2">
+            <img src="image3.jpeg" onclick="showFullScreenImage3()" alt="Image 3">
+          </div>
+    </div>
+  </div>
+<div class="lastPage1">
+ <div class="hidden" id="fourthPage1">
+  <p >earth 84</p>
+ </div>
+</div>
+<div class="lastPage1">
+  <div class="hidden" id="fourthPage2">
+   <p >mars 3024</p>
+  </div>
+ </div>
+ <div class="lastPage1">
+  <div class="hidden" id="fourthPage3">
+   <p >outer belt 2088</p>
+  </div>
+ </div>
+
+
+
+  
+</body>
+</html>

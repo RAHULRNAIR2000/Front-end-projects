@@ -1,0 +1,167 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@100;300;400&family=Vina+Sans&display=swap');
+
+
+.carousel-inner{
+    width: 100%; 
+    
+    height: px;
+      /* margin: auto; */
+}
+.carousel-caption{
+    
+    padding-bottom: 25rem;
+    font-size: 3rem;
+    font-family: 'Anton', sans-serif;
+    /* font-family: 'Poppins', sans-serif;
+    font-family: 'Vina Sans', sans-serif; */
+    text-shadow: 3px 3px  black;
+    font-size: 50px;
+
+    
+
+}
+#f1{
+   
+    /* background-image:  #be0eff;
+    background-image: linear-gradient(160deg, #be0eff 0%, #657bcb 100%); */
+    background-image: linear-gradient( 288deg,  rgba(0,85,255,1) 1.5%, rgba(4,56,115,1) 91.6% );
+    
+    padding-top: 150px;
+    padding-bottom: 150px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: aliceblue;
+    text-align: center;
+    
+}
+h3{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    
+}
+.card-body{
+    height: 500px;
+    width: 300px;
+    padding-left: 120px;
+    padding-top: 144px;
+    border-radius: 10px;
+    
+
+  
+}
+.navbar{
+    color: aliceblue;
+    
+}
+
+    /* /* background: #C9CCD3;
+    background-image: linear-gradient( 288deg,  rgba(0,85,255,1) 1.5%, rgba(4,56,115,1) 91.6% ); */
+    /* padding-bottom: 100px;
+     */
+
+.card{
+    border-radius: 50px;
+    background-image: url("imgh4.jpg");
+    background-size: cover;
+}
+
+.btn {
+    border-radius: 20px;
+    
+}
+.modal-content{
+    border-radius: 20px;
+    background-size: cover;
+    background: url("https://img.freepik.com/premium-vector/landscape-with-mountains-forest-with-pine-trees-silhouette_104785-944.jpg?size=626&ext=jpg");
+}
+/**
+ * Tabs
+ */
+ .tabwhole{
+    display: flex;
+    background-image: linear-gradient( 288deg,  rgba(0,85,255,1) 1.5%, rgba(4,56,115,1) 91.6% );
+ }
+ .tabs {
+	display: flex;
+	flex-wrap: wrap; 
+    margin-left: 280px;
+    margin-top: 30px;
+   
+}
+.tab{
+    margin-right: 113px;
+}
+.tabs label {
+	order: 1; 
+	display: block;
+	padding: 1rem 2rem;
+	margin-right: 0.2rem;
+	cursor: pointer;
+  background-image: linear-gradient( 288deg,  rgba(0,85,255,1) 1.5%, rgba(4,56,115,1) 91.6% );
+  font-weight: bold;
+  /* border-radius: 30px; */
+  /* transition: background ease 0.2s; */
+}
+.tabs .tab {
+  order: 99; 
+  flex-grow: 1;
+	width: 100%;
+	display: none;
+  padding: 1rem;
+  background: #fff;
+}
+.tabs input[type="radio"] {
+	display: none;
+}
+.tabs input[type="radio"]:checked + label {
+	background: #fff;
+}
+.tabs input[type="radio"]:checked + label + .tab {
+	display: block;
+}
+
+@media (max-width: 45em) {
+  .tabs .tab,
+  .tabs label {
+    order: initial;
+  }
+  .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
+  }
+}
+
+/**
+ * Generic Styling
+*/
+/* body {
+  background: #eee;
+  min-height: 100vh;
+	box-sizing: border-box;
+	padding-top: 10vh;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+  line-height: 1.5;
+  max-width: 60rem;
+  margin: 0 auto;
+  font-size: 112%;
+} */
+
+#ptag{
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+}
+.custom-switch {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    transform: scale(1);
+    margin-left: 1px;
+  }
+  #flexSwitchCheckChecked{
+    transform: scale(1.75);
+
+  }

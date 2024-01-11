@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lightbulb</title>
+    <link rel="stylesheet" href="lightbulb.css">
+</head>
+
+<body id="clr">
+
+
+
+    <h1 id="gdm">Good morning</h1>
+
+
+    <div id="cgcolor">
+
+        <button class="btn" onclick="myfun()">Change color</button>
+
+    </div>
+    <script>
+      
+        function myfun() {
+            let id = document.getElementById("cgcolor");
+            let stle = window.getComputedStyle(id);
+            if (stle.getPropertyValue('background-color') == "rgb(255, 255, 255)") {
+                document.getElementById("cgcolor").style.backgroundColor = "black";
+                document.getElementById("clr").style.backgroundColor = "black";
+            
+            }
+            else {
+                document.getElementById("cgcolor").style.backgroundColor = "rgb(255, 255, 255)";
+                document.getElementById("clr").style.backgroundColor = "rgb(255, 255, 255)";
+                
+ 
+            }
+
+
+
+            if (new Date().getHours() > 12) {
+                document.getElementById("gdm").innerHTML = "Good evening!";
+            }
+
+        }
+
+
+
+            // document.getElementById("cgcolor").style.backgroundColor="black";
+            // document. getElementById("gdm").style.backgroundColor="black";
+
+
+
+          
+        
+
+
+    </script>
+
+
+</body>
+
+</html>

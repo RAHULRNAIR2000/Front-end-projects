@@ -1,0 +1,71 @@
+.gridcontainer{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px 200px;
+    grid-gap: 10px;
+    background-color: rgb(253, 250, 250);
+    color: rgb(6, 6, 6);
+    justify-content:center ;
+}
+
+.item-1{
+    grid-column: span 4;
+    background-color: rgb(228, 245, 0);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-2{
+    grid-row: span 1;
+    background-color: rgb(245, 78, 0);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.item-3{
+    grid-row: span 2;
+    grid-column:span 2;
+    background-color: rgb(228, 245, 0);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.item-4{
+    grid-row: span 1;
+    background-color: rgb(245, 78, 0);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-5{
+    grid-row: span 2;
+    grid-column: span ;
+    background-color: rgb(228, 245, 0);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-6{
+    grid-row: span 1;
+    background-color: rgb(245, 78, 0);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.item-7{
+    grid-column: span 3;
+    background-color: rgb(228, 245, 0);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

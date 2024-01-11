@@ -1,0 +1,305 @@
+
+body {
+  /* background-image: url(https://i.pinimg.com/564x/52/2e/3d/522e3d9b0de46ab89b47fcd98e149ce8.jpg); */
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#firstPage {
+    display: flex;
+    justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  align-items: center;
+}
+
+#secondPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0074d9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transition: transform 1s;
+}
+
+#secondPage.active {
+  transform: scale(1);
+}
+#thirdPage.active {
+    transform: scale(1);
+  }
+#thirdPage {
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: #000000;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+   
+  }
+
+  #thirdPage.active {
+    display: block;
+  }
+  /* #fourthPage {
+   color: #48ff00;
+    justify-content: center;
+    align-items: center;
+    background-color: #0074d9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transition: transform 1s;
+  } */
+
+#fourthPage1.active {
+  display:flex;
+  transform: scale(1);
+}
+#fourthPage2.active {
+  display:flex;
+  transform: scale(1);
+}
+#fourthPage3.active {
+  display:flex;
+  transform: scale(1);
+}
+
+/* #transitionButton {
+  background-color: #0074d9;
+  color: #fff;
+  font-size: 24px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+} */
+#thirdPage.active {
+  transform: scale(1);
+}
+#fourthPage1{
+  width: 100%;
+  height: 100%;
+  color: #fff;
+background-repeat: no-repeat;
+background-size: cover;
+background-image: url(https://img.freepik.com/free-photo/futuristic-environmentally-friendly-city-with-green-spaces_23-2150780624.jpg?t=st=1699333360~exp=1699336960~hmac=f5c3a4f98b43e10bdcff8e04a612ccb4ddd6303b48a7e8d5033461f785234bd9&w=1380);
+transform: scale(0);
+transition: transform 1s;
+
+}
+
+#fourthPage2{
+  width: 100%;
+  height: 100%;
+  color: #fff;
+background-repeat: no-repeat;
+background-size: cover;
+background-image: url(https://media-cldnry.s-nbcnews.com/image/upload/newscms/2019_21/2853561/ss-190508-visions-of-the-future-04-mars.png);
+transform: scale(0);
+transition: transform 1s;
+}
+
+#fourthPage3{
+  width: 100%;
+  height: 100%;
+  color: #fff;
+background-repeat: no-repeat;
+background-size: cover;
+background-image: url(https://cdna.artstation.com/p/assets/images/images/050/384/076/large/dave-pasciuto-futurecyberpunkcity-v02.jpg?1654713541);
+transform: scale(0);
+transition: transform 1s;
+}
+
+
+#transitionButton {
+    font-size: 20px;
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  #transitionButton:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  @keyframes glowing-button-85 {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  #transitionButton:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+  #nameInput {
+    width: 80%;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  #submitButton {
+    background-color: #070707;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  #nameInputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h1{
+  
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(.5rem, 1rem + 3vw, 15rem);
+  font-weight: 700;
+  text-transform: uppercase;
+ 
+  }
+  #greetingMessage{
+    font-family: "Oswald", sans-serif;
+  font-size: clamp(.5rem, 1rem + 2vw, 15rem);
+  font-weight: 700;
+  text-transform: uppercase;
+
+  }
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    gap: 40px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 5px ;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    
+    
+  }
+
+  .image-container img {
+
+    padding: 10px;
+    cursor: pointer;
+    width: 400px;
+    height: 500px;
+    transition: transform 0.5s;
+    border-radius: 50px;
+  
+
+   
+    
+  }
+  .text1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    height: 20px;
+    grid-auto-rows: 10px;
+    
+
+  
+
+  }
+  .image-container img:hover {
+    transform: scale(1.1);
+  }
+  .hidden{
+    display: none;
+  }
+
+  .lastPage1 p{
+    /* width: 100%;
+    height: 100%;
+    justify-content: center;
+    padding: 28.8rem; */
+    /* background-image: url(https://img.freepik.com/free-photo/futuristic-environmentally-friendly-city-with-green-spaces_23-2150780624.jpg?t=st=1699333360~exp=1699336960~hmac=f5c3a4f98b43e10bdcff8e04a612ccb4ddd6303b48a7e8d5033461f785234bd9&w=1380); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    /* padding: 50px; */
+    margin: 0px;
+    font-family: "Oswald", sans-serif;
+  font-size: clamp(.5rem, 1rem + 3vw, 15rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  }
+  

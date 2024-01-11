@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link href="/bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="t3login.css"/>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="row">
+    <div class="col-lg-12 col-sm-12 mb-0">
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked  onclick="toggleStyles()">
+    
+  </div>
+</div>
+</div>
+  
+  <div class="container col-lg-4 col-sm-12 mb-0">
+    
+    
+    <form action="nav4.html" onsubmit="return validatePassword()">
+      <h1>Login</h1>
+      <div class="input1 mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+      </div>
+      <div class="input2 mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" required>
+      </div>
+      <div class="remember-forget mb-3">
+        <label><input type="checkbox"> remember me</label>
+        <a href="#"> Forgot password? </a>
+      </div>
+      <button type="submit" class="btn btn-primary">Login</button>
+      <div class="register-link">
+        <p>Don't have an account? <a href="signup.html">Register</a></p>
+        <div id="liveAlertPlaceholder"></div>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function validatePassword() {
+      var passwordInput = document.getElementById('exampleInputPassword1');
+      var password = passwordInput.value;
+
+      if (password.length < 8) {
+        // Replace simple alert with Bootstrap alert
+        var alertPlaceholder = document.getElementById('liveAlertPlaceholder');
+        alertPlaceholder.innerHTML = '<div class="alert alert-danger alert-dismissible fade show" role="alert">Password must be at least 8 characters long.<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>';
+        
+        // Prevent form submission
+        return false;
+      }
+
+      // If the password meets the criteria, allow the form submission
+      return true;
+    }
+  </script>
+
+  <!-- Bootstrap JavaScript and dependencies -->
+  <script src="/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

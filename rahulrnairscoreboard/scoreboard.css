@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url("https://cdn.cbeditz.com/cbeditz/large/11649427067nw79vhejv9igiqpheulz4ofzwy8tmsnwdqv2uphun80sacpxbrj4znytdp8pxfjzsp73wi9a9mya5h2vmwy2vg1uvmon9lkkmnsu.jpg");
+    background-size: cover;
+}
+h2{
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    /* margin: 0px; */
+    font-family: "Oswald", sans-serif;
+  /* font-size: clamp(.5rem, 1rem + 3vw, 15rem); */
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#container {
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    gap: 5px;
+}
+.team {
+    width: 25%;
+    height: 25%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #000000;
+    
+}
+#teamA {
+    background-color: #ffffff;
+}
+#teamB {
+    background-color: #ffffff;
+}
+.score {
+    font-size: 60px;
+}
+#timer {
+    font-size: 80px;
+    color: aliceblue;
+    margin-top: -190px;
+    padding-bottom: 20px;
+
+}
+#winner {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    margin-top: 100px;
+    /* border: 2px solid #333;
+    border-radius: 10px; */
+    padding: 100px;
+    /* box-shadow: 3px 3px 5px #888888; */
+    font-family: "Oswald", sans-serif;
+    font-size: clamp(.5rem, 1rem + 3vw, 15rem);
+    /* font-size: px; */
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #000000;
+}
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px #888888;
+}
+button:hover {
+    background-color: #2874a6;
+}
